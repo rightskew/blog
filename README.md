@@ -1,7 +1,6 @@
 # This is the _final_ motherfucking website.
 
-And it's _really_ more fucking perfect than the last guy's.
-
+ciao sono matt cado
 ## Seriously, some minimal fucking things are needed to make this shit perfect.
 
 **Ten fucking declarations, a `@media` block, and one attribute.**
