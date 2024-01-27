@@ -5,7 +5,7 @@ ciao sono matt cado
 
 **Ten fucking declarations, a `@media` block, and one attribute.**
 
-[Go to Subsection](SUBSECTION.md)
+[Go to Subsection](subsection.md)
 
 
 That's how much CSS and HTML it took to turn that [grotesque pile of shit](https://motherfuckingwebsite.com/) into this finally perfect masterpiece. It's so fucking simple and it still has all the glory of the original perfect-ass website:
