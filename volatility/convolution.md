@@ -27,3 +27,7 @@ In this sense Gaussians (more precisly Levy distributions) are attractors for th
 ![P&L call convolution](conv2.png)
 
 The spread between the red and green line and the blue is called time value. In the money options have also (Spot-Exercise) intrinsic value. This price is the Black-Scholes price, and the value of an option with strike K is therefore:
+
+![P&L spread convolution](conv3.png)
+
+Moreover, if we do the the inverse operation and ask ourselves, what is the volatility value of the normal that was convoluted with the pnl curve, we would get an horizontal line throughout all the strikes. This is the volatility curve of BS prices.
