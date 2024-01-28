@@ -48,3 +48,5 @@ $$\text{Vanna} \approx \frac{\text{dDelta}}{\text{dSpot}} = \text{Gamma}$$
 This is also reflected in the delta hedging process:
 - if market rises $\rightarrow$ vol goes down $\rightarrow$ we make money because our short call (which is now closer) loses value $\rightarrow$ we make money, so we will need to sell high to be hedged
 - if market falls $\rightarrow$ vol goes up $\rightarrow$ we make money because our long put (which is now closer) increases in value $\rightarrow$ we make money, so we will need to buy low to be hedged
+
+Like a long gamma position is generally safe but expensive, a long skew position is also often costly (or we can say that being short skew has risk associated with it).
