@@ -41,4 +41,4 @@ And do the inverse operation
 
 ![callappliv](conv6.jpg)
 
-We don't get a straight line, this is called volatility smile. The market "overestimates" big movements ([kurtosis](../kurtosis/kurtosis.md)), and in particular big downside movements ([skew](../skew/skew.md)).
+We don't get a straight line, this is called volatility smile. The market "overestimates" big movements ([kurtosis](../kurtosis/kurtosis.md)), and in particular big downside movements ([skew](../skew/skew.md)) (or, more likely, the market is right, and we are underestimating them!)
