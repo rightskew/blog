@@ -20,7 +20,7 @@ The convolution is particularly tied with the normal distribution because:
 * the convolution of two normal distribution is a normal distribution
 * if you do the convolution of a distribution with itself many times the limit tends to a normal distribution (central limit theorem)
 
-In this sense Gaussians (more precisly Levy distributions) are attractors for the convolution operation. This is very important because it somewhat justifies the choice of the normal as the modeling distribution of the returns. The only catch is that the CLT works only for the central part of the distribution. If the tails are very fat (power law-like), then the tail of the limiting distribution will also be fat. The central area that we can trust to be normal is $\approx N^{3/4}\sigma$ (with N being the number of times a distribution was convoluted with itself).
+In this sense Gaussians (more precisly Levy distributions) are attractors for the convolution operation. This is very important because it somewhat justifies the choice of the normal as the modeling distribution of the returns. The only catch is that the CLT works only for the central part of the distribution. If the tails are very fat (power law-like), then the tail of the limiting distribution will also be fat. The central area that we can trust to be normal is $\approx N^{3/4}\sigma$ (with N being the number of times a distribution was convoluted with itself). See the first few chapters of Theory of financial risk and derivative pricing by Bouchaud for more.
 
 
 ![P&L call convolution](conv2.jpg)
