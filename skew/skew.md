@@ -5,9 +5,9 @@ The skew is technically defined as the third normalized moment of the distributi
 $$ \mu_3:=E((\frac{x-\mu}{\sigma})^3)$$
 
 or by sampling
-$$ \mu_3 \approx \frac{1}{N}\sum_{i=1}^{N}\frac{x_i-\bar{x}}{\sigma^3}\approx \frac{1}{N}\sum_{i=1}^{N}\frac{\log(\frac{x_i}{x_{i-1}})}{\sigma} $$
+$$ \mu_3 \approx \frac{1}{N}\sum_{i=1}^{N}\frac{(x_i-\bar{x})^3}{\sigma^3}\approx \frac{1}{N}\sum_{i=1}^{N}\frac{\log(\frac{x_i}{x_{i-1}})}{\sigma} $$
 
-It is zero for a normal or a symmetric distribution. Now, there are two quetions:
+It is zero for a normal or a symmetric distribution, and in general has the same sign as the correlation between $\log(\frac{x_i}{x_{i-1}})$ and $\log^2(\frac{x_i}{x_{i-1}})$. Now, there are two quetions:
 * why is the smile skewed?
 * how can we profit from it?
 
