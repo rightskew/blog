@@ -5,7 +5,7 @@ This is a series of blog posts that I composed in the winter of the year 2023 / 
 **Posts:**
 
 * [Convolution and the volatility curve](convolution/convolution.md)
-
+* [Skew](skew/skew.md)
 
 
 
