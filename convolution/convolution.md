@@ -1,6 +1,5 @@
 # Convolution and the volatility curve
 
-In this post I'll try to explain what the volatility curve is and what is its relationship with the convolution. 
 
 Volatility is the main factor when evaluating the price of an option. If there was no volatility, then the price of an option would just be the expected P&L at expiry. 
 
@@ -13,7 +12,7 @@ $$(f*g)(x):=\int_{-\infty}^{\infty}f(t)g(x-t)dt   $$
 
 where f is the shifted ReLu=max(0,S-X) and g is the normal distribution of mean 0 and variance $t\sigma^2$. A friend sent my this [video](https://www.youtube.com/watch?v=KuXjwB4LzSA) which gives a cool explanation.
 
-The value of an option is therefore the convolution of the distribution of returns and the P&L graph at expiry. 
+The value of an option is therefore the convolution of the distribution of returns and the P&L graph at expiry. [Getting the correct value of volatility](../volatility/volatility.md) is not trivial, so this is not as easy as it sounds.
 
 
 
@@ -42,4 +41,4 @@ And do the inverse operation
 
 ![callappliv](conv6.jpg)
 
-We don't get a straight line, this is called volatility smile. The market "overestimates" big movements (kurtosis), and in particular big downside movements (skew).
+We don't get a straight line, this is called volatility smile. The market "overestimates" big movements ([kurtosis](../kurtosis/kurtosis.md)), and in particular big downside movements ([skew](../skew/skew.md)).
