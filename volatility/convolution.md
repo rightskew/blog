@@ -3,7 +3,7 @@
 In this post I'll try to explain what the volatility curve is and what is its relationship with the convolution. 
 
 Volatility is the main factor when evaluating the price of an option. If there was no volatility, then the price of an option would just be the expected P&L at expiry. 
-prova comv
+prova comv 
 ![P&L call](conv1.png)
 
 However, since the volatility value is almost never zero, and we still have some time to maturity, then we can expect the underlying to move around. Usually, the way we model the returns is as $N(0, t\sigma^2)$. Therefore, the value of the option is not the value at expiry, but it is an average of the values that it can reach at expiry weighted by their respective probability. 
