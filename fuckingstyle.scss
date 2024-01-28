@@ -9,6 +9,17 @@ body {
   color: #444;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+}
+
 h1,
 h2,
 h3 {
