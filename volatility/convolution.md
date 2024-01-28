@@ -31,3 +31,15 @@ The spread between the red and green line and the blue is called time value. In 
 ![P&L spread convolution](conv3.png)
 
 Moreover, if we do the the inverse operation and ask ourselves, what is the volatility value of the normal that was convoluted with the pnl curve, we would get an horizontal line throughout all the strikes. This is the volatility curve of BS prices.
+
+![hline](conv4.png)
+
+However, if we take the price of a call option on the market
+
+![callappl](conv6.png)
+
+And do the inverse operation
+
+![callappliv](conv5.png)
+
+We don't get a straight line, this is called volatility smile. The market "overestimates" big movements (kurtosis), and in particular big downside movements (skew).
