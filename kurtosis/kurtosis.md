@@ -12,7 +12,7 @@ It is 3 for a normal distribution, distributions with higher values are called l
 $$ \mu_4 = E(Z^4) = Var(Z^2)+ (E(Z^2))^2$$
 $$ =Var(Z^2) + Var^2(Z) = Var(Z^2) +1 $$
 
-Now, there are two quetions:
+Now, there are two questions:
 * why is the the volatility curve smiling?
 * how can we profit from it?
 
