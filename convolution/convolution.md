@@ -42,3 +42,25 @@ And do the inverse operation
 ![callappliv](conv6.jpg)
 
 We don't get a straight line, this is called volatility smile. The market "overestimates" big movements ([kurtosis](../kurtosis/kurtosis.md)), and in particular big downside movements ([skew](../skew/skew.md)) (or, more likely, the market is right, and we are underestimating them!)
+
+## How do we do the convolution?
+
+Another cool thing about convolution is that it's possible to get it with the fourier transform:
+
+$$ \hat{f}(y) = \int_{-\infty}^{\infty}f(x)e^{-i2\pi y \cdot x}dx$$
+$$\hat{(f*g)}(x)=\hat{(f+g)}(x) = \hat{f}\hat{g}$$
+
+So we can apply the fourier transform to the normal and get:
+
+$$ \hat{f}_N(k) = \sqrt{\pi}e^{\frac{-k^2}{4}}$$
+
+a gaussian! The gaussian are not only fixed points in the convolution space, but also under fourier transform (this is not a coincidence, of course).
+
+
+And to the Relu:
+
+$$\hat{f}_R(k) =-\frac{1}{\sqrt{2\pi}w^2}$$
+
+we then multiply them pointwise to get
+
+$$\frac{e^{\frac{-k^2}{4}}}{\sqrt{2}k^2}$$
