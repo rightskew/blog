@@ -11,7 +11,7 @@ This weighted average operation is called convolution and is defined as:
 
 $$(f*g)(x):=\int_{-\infty}^{\infty}f(t)g(x-t)dt   $$
 
-where f is the shifted ReLu=$max(0,S-X)$ and g is the normal distribution of mean 0 and variance $t\sigma^2$. A friend sent my this [video](https://www.youtube.com/watch?v=KuXjwB4LzSA) which gives a cool explanation.
+where f is the shifted ReLu= $ \max(0,S-X) $ and g is the normal distribution of mean 0 and variance $t\sigma^2$. A friend sent my this [video](https://www.youtube.com/watch?v=KuXjwB4LzSA) which gives a cool explanation.
 
 The value of an option is therefore the convolution of the distribution of returns and the P&L graph at expiry. 
 
