@@ -34,7 +34,7 @@ This happens often for short-scale returns. The price is now no longer correctly
 
 Like any other thing, we can profit by buying skew when it's cheap and selling it when it's rich. To be long skew, means that we profit when the volatility becomes more tilted. A classic way to gain skew exposure is with a collar, where we bet on skew becoming more negative.
 
-![skew1](skew.jpg)
+![skew1](Skew.jpg)
 
 
 Let's consider a delta hedged collar (delta of 0, altought it could be argued that we are positive delta for small movements and negative delta for big ones). If the skew becomes more negative the price of our OTM put increases, and the OTM call decreases, making us money. Like with gamma, being long or short skew is not exactly symmetrical. Being long skew is less risky in jumpy markets (where spot is highly correlated with vol). In fact,  gamma is basically equivalent to skew:
