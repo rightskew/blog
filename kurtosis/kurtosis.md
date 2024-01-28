@@ -22,7 +22,7 @@ There are three main reasons why OTM options are expensive:
 * volatility is correlated with spot
 * returns have fat tails
 
-If returns were all sampled from the same constant distribution, the sum would still have no kurtosis. However, volatility is always changing. The volatility of volatility makes some points concentrate around the mean, and some very far into the tails. If we sample from $\mathcal{N}(0, \sigma^2))$ where $\sigma$ is *not* fixed, but sampled from a log normal with standard deviation $\sigma^'$, as we increase $ \sigma^' $ we also increase the kurtosis:
+If returns were all sampled from the same constant distribution, the sum would still have no kurtosis. However, volatility is always changing. The volatility of volatility makes some points concentrate around the mean, and some very far into the tails. If we sample from $\mathcal{N}(0, \sigma^2))$ where $\sigma$ is not fixed, but sampled from a log normal with standard deviation $\bar{\sigma}$, as we increase $\bar{ \sigma} $ we also increase the kurtosis:
 
 ![kurt1](kurt1.png)
 
