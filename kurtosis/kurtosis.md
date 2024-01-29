@@ -9,6 +9,7 @@ or by sampling
 $$ \mu_4 \approx \frac{1}{N}\sum_{i=1}^{N}\frac{(x_i-\bar{x})^4}{\sigma^4}$$
 
 It is 3 for a normal distribution, distributions with higher values are called leptokurtic (and platikurtic the reverse). It rappresents how "fat" are the tails, and also how much "dispersed" are the returns squared. For a normalized distribution Z:
+
 $$ \mu_4 = E(Z^4) = Var(Z^2)+ (E(Z^2))^2$$
 $$ =Var(Z^2) + Var^2(Z) = Var(Z^2) +1 $$
 
@@ -22,7 +23,7 @@ There are three main reasons why OTM options are expensive:
 * volatility is correlated with spot
 * returns have fat tails
 
-If returns were all sampled from the same constant distribution, the sum would still have no kurtosis. However, volatility is always changing. The volatility of volatility makes some points concentrate around the mean, and some very far into the tails. If we sample from $\mathcal{N}(0, \sigma^2))$ where $\sigma$ is not fixed, but sampled from a log normal with standard deviation $\bar{\sigma}$, as we increase $\bar{ \sigma} $ we also increase the kurtosis:
+If returns were all sampled from the same constant distribution, the sum would still have no kurtosis. However, volatility is always changing. The volatility of volatility makes some points concentrate around the mean, and some very far into the tails. If we sample from $\mathcal{N}(0, \sigma^2)$ where $\sigma$ is not fixed, but sampled from a log normal with standard deviation $\bar{\sigma}$, as we increase $\bar{ \sigma} $ we also increase the kurtosis:
 
 ![kurt1](kurt1.jpg)
 
