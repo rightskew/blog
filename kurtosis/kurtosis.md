@@ -37,3 +37,14 @@ The second reason is double: first, if both returns and volatility are random, t
 $$\text{Kurtosis} > \text{Skew}^2 +1$$
 
 The third reason is the following: returns are not gaussians. It happens to see $20\sigma$ movements (which would never happen if they were truly gaussian). The tails in particular behave more power law like $f(x) \approx \alpha c^{-x}$. The CLT theorem would say that if we convolute this distribution with itself enough times then we would get something that resembles a gaussian. The problem is that only the central region will be a gaussian, the tails will continue to act as power law! (althought the "central" region will grow with N).
+A nice story that explains why returns are should not be modelled as gaussian is the following:
+*A farmer uses a rivulet of water behind his house to water the plants. He want to estimate the distribution of the water that comes day each day. Being a good statistician, he uses the Gaussian distribution to model it. After 100 days of measuraments, the mean is around 400 liters per day, with a standard deviation of 50 liters. He goes into the market, and sells 600 strike calls, being quite sure that they will never be exercised. One day, another farmer goes near the start of the river, and removes a big tree that was blocking the stream. The day after, the poor farmer registers 4000 liters of water, his plants are all dead and he just lost all of his savings on the market.*
+
+
+## How can we profit from it?
+
+Like for the skew, we should buy kurtosis when it's cheap and sell when it's rich. Therefore, we should buy if we think that vol of vol is underestimated or there is a black swan event around the corner, and sell if we think that vol will be quite stable in the future. A classic way to gain kurtosis exposure is with a short straddle and 2 long strangle.
+
+![kurt2](Kurt2.jpg)
+
+Here we want either very small movements (to profit from the short straddle) or very large (to profit from the long strangle). Therefore we profit from volatility dropping or increasing faster than the market expects.
