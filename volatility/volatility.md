@@ -34,6 +34,7 @@ Squared returns are difficult to compute for a trader, but he might know what th
 $$ E(\lvert R\rvert) = \frac{1}{N-1}\sum_{i=1}^{N}\vert X_{i}\rvert  $$
 
 Again, for Jensen, this is a lower bound for the actual volatility. If we assume that the returns are normally distributed then we can get a decent estimate as:
+
 $$E(\lvert R\rvert) = \sqrt{\frac{2}{\pi}}\sigma  \approx 0.8 \sigma$$
 
 Therefore, if we know the average daily move and want to know how much is the annual standard deviation, we can get it by multiplying the daily std by 16 $(\sqrt{252})$:
