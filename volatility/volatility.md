@@ -19,7 +19,9 @@ And taking the square root leads to
 $$\sigma = \sqrt{ \frac{1}{N-1}\sum_{i=1}^{N}X_{i}^2}$$
 
 which is again a biased (systematically low) estimation! It turns out that it's not possible to have an estimator that is unbiased both for the standard deviation and for the variance (Jensen):
+
 $$ E(s)=E(\sqrt{s^2})<\sqrt{E(s^2)}=\sqrt{\sigma^2}=\sigma $$
+
 For large N this is not a problem, but for small N we need to divide by a factor $b(N) \approx \sqrt{1-\frac{3}{2N}}$ to get the correct population standard deviation (for more see Volatility Trading by Sinclair) and get:
 
 $$\sigma = \frac{1}{b(n)}\sqrt{ \frac{1}{N-1}\sum_{i=1}^{N}X_{i}^2}$$
@@ -28,11 +30,14 @@ This estimator converge quite slowly to the correct value and a confidence level
 
 ## The fast
 Squared returns are difficult to compute for a trader, but he might know what the mean absolute return is:
-$$E(\lvert R\rvert) = \frac{1}{N-1}\sum_{i=1}^{N}\vert X_{i}\rvert  $$
+
+$$ E(\lvert R\rvert) = \frac{1}{N-1}\sum_{i=1}^{N}\vert X_{i}\rvert  $$
+
 Again, for Jensen, this is a lower bound for the actual volatility. If we assume that the returns are normally distributed then we can get a decent estimate as:
 $$E(\lvert R\rvert) = \sqrt{\frac{2}{\pi}}\sigma  \approx 0.8 \sigma$$
 
 Therefore, if we know the average daily move and want to know how much is the annual standard deviation, we can get it by multiplying the daily std by 16 $(\sqrt{252})$:
+
 $$\sigma_{annual} \approx \frac{16 \cdot \text{average daily move}}{0.8 \cdot S} = 20 \frac{\text{average daily move}}{S} $$
 
 ## (One) alternative
