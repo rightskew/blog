@@ -12,7 +12,9 @@ $$\text{PL} \approx C(S_{t+1}) - C(S_{t}) - \Delta(S_{t+1} - S_{T})$$
 
 If we taylor expand:
 
-$$ C(S_{t+1}) = C(S_t) + \Delta (S_{t+1} - S_{t}) + \frac{1}{2}(S_{t+1}-S_{t})^2\Gamma$$
+$$ C(S_{t+1}) = C(S_t) + \Delta (S_{t+1} - S_{t})$$
+
+$$ + \frac{1}{2}(S_{t+1}-S_{t})^2\Gamma$$
 
 $$\rightarrow \text{PL} \approx \frac{1}{2} (S_{t+1}-S_{t})^2\Gamma $$
 
