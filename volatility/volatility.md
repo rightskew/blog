@@ -69,3 +69,22 @@ $$ \sigma_{\text{long}} = \sigma \sqrt{1-\frac{\lambda}{\sigma}\sqrt{\frac{8}{\p
 $$ \sigma_{\text{short}} = \sigma \sqrt{1+\frac{\lambda}{\sigma}\sqrt{\frac{8}{\pi\Delta t}}} $$
 
 where $\lambda$ is the proportional transaction cost and $\Delta t$ is the time between rebalancing.
+
+But it gets even worse: our trades have an impact on the market. When we are long gamma and meet the spot we "stop" it (buy when it's going down and sell when it's going up), and likewise we exacerbate returns when short gamma. Delat hedging makes the volatility even lower when we are long gamma and higher when short gamma. 
+But how much is our market impact? Let's define it as the movement of the log midprice due to a trade of N stocks
+
+$$ \Delta \log(S) = sign(N)F(N) $$
+
+empirically, this scales as the square root of N:
+
+$$ F(N) = \alpha \sqrt{N} $$
+
+and
+
+$$ \sigma_t^2 \approx \alpha^2 \mu_t$$
+
+where $\sigma_t$ is the volatility and $\mu_t$ is the average number of shares traded per unit of time. We then get
+
+$$ F(N) \approx \sigma_t \sqrt{\frac{N}{\mu_t}} $$
+
+so we have a big market impact when we trade many shares, the market is illiquid and has a high volatility (and in those situations we should delta hedge less often, maybe).
