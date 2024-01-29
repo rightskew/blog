@@ -13,7 +13,6 @@ $$\text{PL} \approx C(S_{t+1}) - C(S_{t}) - \Delta(S_{t+1} - S_{T})$$
 If we taylor expand:
 
 $$ C(S_{t+1}) = C(S_t) + \Delta (S_{t+1} - S_{t})$$
-
 $$ + \frac{1}{2}(S_{t+1}-S_{t})^2\Gamma$$
 
 $$\rightarrow \text{PL} \approx \frac{1}{2} (S_{t+1}-S_{t})^2\Gamma $$
@@ -21,7 +20,6 @@ $$\rightarrow \text{PL} \approx \frac{1}{2} (S_{t+1}-S_{t})^2\Gamma $$
 Also on average 
 
 $$ (S_{t+1}-S_{t})^2 \approx \sigma^2 S^2$$
-
 $$\rightarrow \text{PL} \approx \frac{1}{2} \sigma^2 S^2\Gamma $$
 
 If implied volatility is mispriced than we make:
@@ -31,11 +29,8 @@ $$\text{PL} \approx \frac{1}{2} S^2\Gamma(\sigma^2 - \sigma_{\text{implied}}^2) 
 Also, since $vega = \frac{\partial C}{\partial \sigma_{iv}}$, we get that 
 
 $$\text{PL} = \text{vega}(\sigma - \sigma_{\text{implied}})$$ 
-
 $$\rightarrow\text{vega}(\sigma - \sigma_{\text{implied}}) \approx \frac{1}{2} S^2\Gamma(\sigma^2 - \sigma_{\text{implied}}^2)$$ 
-
 $$\rightarrow\text{vega}\approx \frac{1}{2} S^2\Gamma(\sigma + \sigma_{\text{implied}})$$ 
-
 $$\rightarrow\text{vega}\approx  S^2\Gamma\sigma$$ 
 
 This is the instant value, since an option has time to maturity t we should multiply the RHS by t.
