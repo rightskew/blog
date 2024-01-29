@@ -23,6 +23,7 @@ The first reason is pretty self-explanatory. Investors are long the underlying a
 The second reason come from the fact that (in equities at least) the returns are negatively correlated with volatility. After a big movement, we expect volatility to increase, possibly exercibating the return. This is also the idea behind the Henston model:
 
 $$dX_t = X_t(mdt+\sigma_tdW)$$
+
 $$d(\sigma_t^2)=\Omega\sigma(\sigma_t^2-\sigma_0^2)dt+\gamma\sigma_tdW' $$
 
 where $dW$ and $dW'$ are correlated (and create the skew). $\Omega$ is the mean returning parameter, and create the kurtosis together with $\gamma$.

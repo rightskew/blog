@@ -30,6 +30,7 @@ If returns were all sampled from the same constant distribution, the sum would s
 Again, this is another of the ideas behind the Henston model:
 
 $$dX_t = X_t(mdt+\sigma_tdW)$$
+
 $$d(\sigma_t^2)=\Omega\sigma(\sigma_t^2-\sigma_0^2)dt+\gamma\sigma_tdW' $$
 
 Increasing $\gamma$ will increase the kurtosis.

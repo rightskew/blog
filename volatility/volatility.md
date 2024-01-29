@@ -39,7 +39,6 @@ $$E(\lvert R\rvert) = \sqrt{\frac{2}{\pi}}\sigma  \approx 0.8 \sigma$$
 Therefore, if we know the average daily move and want to know how much is the annual standard deviation, we can get it by multiplying the daily std by 16 $(\sqrt{252})$:
 
 $$\sigma_{annual} \approx \frac{16 \cdot \text{average daily move}}{0.8 \cdot S} $$
-
 $$= 20 \frac{\text{average daily move}}{S} $$
 
 ## (One) alternative
