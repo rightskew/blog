@@ -47,7 +47,8 @@ We don't get a straight line, this is called volatility smile. The market "overe
 
 Another cool thing about convolution is that it's possible to get it with the fourier transform:
 
-$$ \hat{f}(y) = \int_{-\infty}^{\infty}f(x)e^{-i2\pi y \cdot x}dx, $$
+$$ \hat{f}(y) = \int_{-\infty}^{\infty}f(x)e^{-i2\pi y \cdot x}dx $$
+
 $$\hat{(f*g)}(x)=\hat{(f+g)}(x) = \hat{f}\hat{g}$$
 
 So we can apply the fourier transform to the normal and get:
