@@ -7,6 +7,6 @@ This is a series of blog posts that I composed in the winter of the year 2023 / 
 * [Convolution and the volatility curve](convolution/convolution.md)
 * [Skew](skew/skew.md)
 * [Kurtosis](kurtosis/kurtosis.md)
-
+* [Measuring relative volatility](volatility/volatility.md)
 
 This page was licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
