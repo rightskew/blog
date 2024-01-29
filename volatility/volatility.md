@@ -55,7 +55,7 @@ This last observation leads to another important fact: volatility is relative. "
 We touched on the importance of the sampling window, but what about the sampling frequency?
 Is it better to sample each minute, each hour or each day? Clearly, if we sample more often we can get a better estimate of the "instant" volatility, but we get also more noise. It would be better to use all three and compare them: if the high frequency (say hours) volatility is higher than the low frequency (say days) volatility it probably means that the underlying is mean reverting (every few hours). If the low frequency vol is higher than the high frequency vol, then there is some trend.
 
-Furthermore, we are not trading volatility in the vacuum. To capitalize on cheap (or rich) volatility we want to buy (or sell) options and delta hedge. Now, there are two problems: 
+Furthermore, we are not trading volatility in the vacuum. To capitalize on cheap (or rich) volatility we want to buy (or sell) options and [delta hedge](../delta_hedging/delta_hedging.md). Now, there are two problems: 
 - the perceived volatility is correlated with the hedging frequency
 - there is no "fixed price", the underlying has a bid/ask spread
 
