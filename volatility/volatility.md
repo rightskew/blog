@@ -1,3 +1,5 @@
+## [Home](../README.md)
+
 # Measuring volatility
 
 Volatility is technically defined as the standard deviation of the logarithmic returns.
@@ -50,7 +52,7 @@ $$\sigma = \sqrt{\frac{1}{4N\log(2)} \sum_{i=1}^N\log(\frac{h_i}{l_i})^2} $$
 
 This estimator converges faster (5 times) than the close to close, but they both share the same weakness: we are only looking at a partial realization of the time series. They will be both biased low as the large movements ( or the highest high and the lowest low) will be likely outside our sampling window. We can only increase our sampling window by a finite amount, as volatility is always changing and there is a very steep diminishing return in the amount of information we get. Including a black swan event in our sampling window can change our estimation by quite a bit, but we can't afford to sample over the past 10 years, as that will only give us an average value of vol, and not how much it's now.
 
-## [Home](../README.md)
+
 
 # Relativity
 
