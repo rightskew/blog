@@ -36,3 +36,9 @@ A general good practice is siloing: to divide the machine learning pipeline in s
  - First, train a high recall method (or not use ml at all) to find all the points in time where you wanted to trade. Example: you are trading a mean reverting asset, you mark a 1 when the price is too high (crosses the upper band) and as -1 when the price is too low (crosses the lower band). Low and high should be proportional to the standard deviation, computed using a trailing EWMA.
 
  - Second, for each selected trade, apply the sigmoid function to the PNL of that trade. Then train a logistic regression on the selected trades (using some features) to match the pnl distribution using the cross entropy loss. A 1 should loosely say that we always want to do that trade, 0 never. With the probability distribution we can also size it using Kelly. 
+
+ ## Fractional differences
+
+ I never used this method, but it looks interesting. When we want to model a time series, often we need it to be stationary (like if want to use an ARMA). To get a stationary time series we usually take the returns so $R_t = S_t - S_{t-1}$, or, using the backshift operator, $BS_t = S_{t-1} \rightarrow R_t = (1-B)S_t$. If this is not stationary, we can take the returns of the returns  $(1-B)^d S_t$, but as we continue down this path we lose more and more memory/autocorrelation. But what if taking the returns was not necessary, and we could just take $d<1$ and still make it stationary? 
+
+ To take $(1-B)^d S_t$ with $d<1$ we Taylor expand it using B as a variable and get $\sum_{k=0}^\infty (d, k) (-B)^k$. In practice we don't have an infinite time series so we take just the first n terms and get we the weight w recursively $w_k = -w_{k-1}\frac{d-k+1}{k}$. Apparently d = 0.2 is enough for many time series, and removes less memory from the process.
