@@ -47,8 +47,20 @@ A nice story that explains why returns are should not be modelled as gaussian is
 
 ## How can we profit from it?
 
-Like for the skew, we should buy kurtosis when it's cheap and sell when it's rich. Therefore, we should buy if we think that vol of vol is underestimated or there is a black swan event around the corner, and sell if we think that vol will be quite stable in the future. A classic way to gain kurtosis exposure is with a short straddle and 2 long strangle.
+Like for the skew, we should buy kurtosis when it's cheap and sell when it's rich. Therefore, we should buy if we think that vol of vol is underestimated and sell if we think that vol will be quite stable in the future. A way to gain kurtosis exposure is with a short straddle and 2 long strangle.
 
 ![kurt2](Kurt2.jpg)
 
 Here we want either very small movements (to profit from the short straddle) or very large (to profit from the long strangle). Therefore we profit from volatility dropping or increasing faster than the market expects.
+
+Volga (volatility of Gamma) is the local proxy for kurtosis:
+
+$$\text{Volga} =\frac{\text{dVega}}{\text{dVol}}$$.
+
+Volga, similarly to Vanna and Gamma, gives us a convex payoff: we profit more when vol increases and we lose less when vol decrease. When we buy an OTM option, we overpay for Vega convexity:
+- if IV goes up, our option becomes more ATM, vega increases and we make more money
+- if IV goes down, our option becomes more OTM, vega decreases and we lose less money
+
+Like skew, when IV is very high kurtosis tends to be capped by the maximum observed historical volatility. Likewise, when IV goes down, OTM options are sticky, so kurtosis increases. 
+
+Kurtosis (like skew) is highest for near dated options, and lower for long dated maturities. Unlike skew, kurtosis decreases as $\frac{1}{t}$, so while it dominates skew for near maturity, its dominated by it in long maturities.
