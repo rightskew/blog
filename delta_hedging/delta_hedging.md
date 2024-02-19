@@ -43,4 +43,4 @@ This is the instant value, since an option has time to maturity t we should mult
 
 $$\text{vega}\approx  S^2\Gamma\sigma t$$ 
 
-In general, if we earn x because IV went up and we are long vega, then we would earn the same x with delta hedging thanks to gamma if realized vol = IV. Another cool thing about vega is that it's convex for OTM options: it rises when IV goes up and decreases when IV goes down.
+In general, if we earn x because IV went up and we are long vega, then we would earn the same x with delta hedging thanks to gamma if realized vol = IV. 
