@@ -7,7 +7,7 @@ The skew is technically defined as the third normalized moment of the distributi
 $$ \mu_3:=E((\frac{x-\mu}{\sigma})^3)$$
 
 or by sampling
-$$ \mu_3 \approx \frac{1}{N}\sum_{i=1}^{N}\frac{(x_i-\bar{x})^3}{\sigma^3}\approx \frac{1}{N}\sum_{i=1}^{N}\frac{\log(\frac{x_i}{x_{i-1}})}{\sigma} $$
+$$ \mu_3 \approx \frac{1}{N}\sum_{i=1}^{N}\frac{(x_i-\bar{x})^3}{\sigma^3}\approx \frac{1}{N}\sum_{i=1}^{N}\frac{\log(\frac{x_i}{x_{i-1}})}{\sigma} $$.
 
 It is zero for a normal or a symmetric distribution, and in general has the same sign as the correlation between $\log(\frac{x_i}{x_{i-1}})$ and $\log^2(\frac{x_i}{x_{i-1}})$. Now, there are two questions:
 * why is the smile skewed?
@@ -71,7 +71,12 @@ Just remember that skew cannot be too negative or too positive for a no arbitrag
 Long dated options are less sensible to movements in spot than short dated ones. Since vol tends to mean revert in about 8 months, a 2 year IV will be quite close to an historical mean. So what can we say about the 80, 100 and 120% moneyness line?
 The 80% line will have an inverted term structure, the 100% will have a flat term structure and the 120% will have a upward sloping term structure. If we end up at 80% tomorrow, it means there was a big drop, so vol should be much higher in the short term, and mostly unchanged in 2 years (or maybe just a bit higher). The same but opposite for 120%, if markets are doing good today we don't expect much more vol rn, but in the long term we do.
 
-Assuming sticky strike, short term dated options need to have a higher skew than long dated ones, because the correlation vol/spot is higher. A rule of thumb is that this correlation (or kurtosis in general) decays as $\approx\frac{1}{\sqrt{t}}$
+Assuming sticky strike, short term dated options need to have a higher skew than long dated ones, because the correlation vol/spot is higher. A rule of thumb is that this correlation (or skewness in general) decays as $\approx\frac{1}{\sqrt{t}}$
+
+
+## How to measure
+
+The easiest way to measure skew is by taking 90%Put and subtract the 100% (or 110%) call. Note that we don't divide by volatility bc to get 90% moneyness we already normalized by vol. A slightly better way would be 25 Delta put - 25 Delta call / 50 delta.
 
 ## Extra: Skew is weird
 
@@ -79,12 +84,12 @@ Assuming sticky strike, short term dated options need to have a higher skew than
 
 Qs:
 
-- Say A is worth 100 and it's volatility is $\sigma$. 
-1) How much is the ATM call worth for $\sigma \rightarrow \infty$? (assume no interest rates)
-2) How much is the 0 strike call worth?
-3) How much is the 0-100 call spread worth? 
+1) Say A is worth 100 and it's volatility is $\sigma$. 
+- How much is the ATM call worth for $\sigma \rightarrow \infty$? (assume no interest rates)
+- How much is the 0 strike call worth?
+- How much is the 0-100 call spread worth? 
 
-- Say A and B both are worth 100, and A has 5% vol and B has 25% vol. 
-1) If we can buy a leveraged A such that its vol is now 25%, which would you buy? Leveraged A or B? (assume no fees)
-2) If the owner of A goes to the casino and bets 1/100 of the company on a (fair) coin toss, is A worth more or less?
-3) What if he does it a milion times?
+2) Say A and B both are worth 100, and A has 5% vol and B has 25% vol. 
+- If we can buy a leveraged A such that its vol is now 25%, which would you buy? Leveraged A or B? (assume no fees)
+- If the owner of A goes to the casino and bets 1/100 of the company on a (fair) coin toss, is A worth more or less?
+- What if he does it a milion times?
