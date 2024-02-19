@@ -40,7 +40,7 @@ Like any other thing, we can profit by buying skew when it's cheap and selling i
 ![skew1](Skew.jpg)
 
 
-Let's consider a delta hedged collar: if the skew becomes more negative the price of our OTM put increases, and the OTM call decreases, making us money. In general, when we buy an OTM put and sell an OTM call, we are in debt (the put is more expensive). This means that we are paying some kind of theta as time passes (like for a long gamma position). In a long gamma position, theta is the amount we would earn if realized vol = implied vol. In a long skew position (a collar), theta is the amount we would earn if realized skew = implied skew, in practice realized $\frac{dVol}{dSpot} =$ implied$\frac{dVol}{dSpot}$. Skew is locally tracked by Vanna 
+Let's consider a delta hedged collar: if the skew becomes more negative the price of our OTM put increases, and the OTM call decreases, making us money. In general, when we buy an OTM put and sell an OTM call, we are in debt (the put is more expensive). This means that we are paying some kind of theta as time passes (like for a long gamma position). In a long gamma position, theta is the amount we would earn if realized vol = implied vol. In a long skew position (a collar, or any vertical spread), theta is the amount we would earn if realized skew = implied skew, in practice realized $\frac{dVol}{dSpot} =$ implied$\frac{dVol}{dSpot}$. Skew is locally tracked by Vanna 
 
 $$\text{Vanna} = \frac{\text{dDelta}}{\text{dVol}}=\frac{\text{dVega}}{\text{dSpot}}$$
 
