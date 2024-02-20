@@ -68,4 +68,4 @@ De prado talks a lot about backtesting. The salient points are the following:
 
 - when perfoming a grid search, instead of trying out every possible parameter (which could take a lot of time), just sample a set of parameters from a set of fixed distributions (they don't need to be uniform)
 
-- instead of training up to x_t and test on X_{t+1}, also test on x_{t+2} until x_{T}. If performance drops too soon, maybe we are using a wrong time scale. Also we can test on the reverse dataset or do a combinatorial split, with the idea that the performance shound't drop too much. If it drops, then we were probably overfitting 
+- instead of training up to x_t and test on $x_{t+1}$, also test on $x_{t+2}$ until $x_{T}$. If performance drops too soon, maybe we are using a wrong time scale. Also we can test on the reverse dataset or do a combinatorial split, with the idea that the performance shound't drop too much. If it drops, then we were probably overfitting 
