@@ -2,7 +2,7 @@
 
 # Good ML 
 
-Here I list some good ML practices, maily found in the De Prado book.
+Here I list some good ML practices found in the De Prado book.
 - Using candles
 - Feature selection
 - Siloing 
