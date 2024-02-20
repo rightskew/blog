@@ -23,7 +23,7 @@ We start with the first step of every machine learing pipeline: data analysis. T
 
 ## Feature selection
 
-When selecting features, we should select the relevant features before doing any multi (linear) regression. This means testing first each feature separately, and using LASSO afterwards (Ridge is probably better because collinearity is hard to get rid). Also, when training we should use a trailing window with fixed size. In this way, the training set does not grow as time goes on but the problem is that we are reusing features (training sets intersect). We should therefore: use EWMA and penalize feature intersection. If we can weight the importance of a feature, we should weight it less if its being reused, and more if it influences the pnl. If we can weight the points, we should weight more the points that influence more the pnl (ex liquidity).
+When selecting features, we should select the relevant features before doing any multi (linear) regression. This means testing first each feature separately, and NOT using LASSO afterwards (Ridge is probably better because collinearity is hard to get rid). Also, when training we should use a trailing window with fixed size. In this way, the training set does not grow as time goes on but the problem is that we are reusing features (training sets intersect). We should therefore: use EWMA and penalize feature intersection. If we can weight the importance of a feature, we should weight it less if its being reused, and more if it influences the pnl. If we can weight the points, we should weight more the points that influence more the pnl (ex liquidity).
 
 ## Siloing:
 
