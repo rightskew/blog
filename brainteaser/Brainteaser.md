@@ -21,6 +21,7 @@ Le't assume A=B=100. Let's also assume they follow a lognormal distribution: the
 $$ 
 A = E(e^{\mathcal{N}(\mu_A, 5^2)}) 
 $$
+
 $$ 
 B = E(e^{\mathcal{N}(\mu_B, 25^2)})
 $$
