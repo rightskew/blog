@@ -12,3 +12,43 @@ The reason is the following: as volatility goes to infinity, the mean of the log
 Therefore, every call option has a value of F and every put a value of S.
 
 
+### Should we buy A or B?
+
+Le't assume A=B=100. Let's also assume they follow a lognormal distribution: their value is:
+
+$$ 
+A = E(e^{\mathcal{N}(\mu_A, 5^2)}) 
+$$
+$$ 
+B = E(e^{\mathcal{N}(\mu_B, 25^2)})
+$$
+
+So we get that the mean of the exponent is:
+
+$$
+100 = e^{\mu_A + 0.05/2} \rightarrow \mu_A \approx 4.58
+$$
+$$
+100 = e^{\mu_A + 0.25/2} \rightarrow \mu_B \approx 4.48
+$$
+
+If we increase the volatility of A to 25% we then get
+
+$$
+A_{\text{leveraged}} = e^{4.58 + 0.25/2} = 110
+$$
+
+So A is worth more than B!
+
+
+### And what if we increase the volatility by going to the casino?
+
+If the owner goes to the casino the value of A is now:
+
+$$
+A = \frac{1}{2}101 + \frac{1}{2}99 = 100
+$$
+
+If he keeps betting 1/100 of the value of A we get a binomial series, which still sums up to 100.
+
+The difference is that in the first we sample the logarithmic returns, in the second we sample the geometric returns. For small numbers (low vol) there is no difference, but as we increase vol we increase the divergence between the 2.

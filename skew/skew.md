@@ -93,3 +93,6 @@ Qs:
 - If we can buy a leveraged A such that its vol is now 25%, which would you buy? Leveraged A or B? (assume no fees)
 - If the owner of A goes to the casino and bets 1/100 of the company on a (fair) coin toss, is A worth more or less?
 - What if he does it a milion times?
+- What assumptions are you making on the underlying distributions?
+
+[Answers](../brainteaser/Brainteaser.md)
