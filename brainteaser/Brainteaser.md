@@ -28,6 +28,7 @@ So we get that the mean of the exponent is:
 $$
 100 = e^{\mu_A + 0.05/2} \rightarrow \mu_A \approx 4.58
 $$
+
 $$
 100 = e^{\mu_A + 0.25/2} \rightarrow \mu_B \approx 4.48
 $$
