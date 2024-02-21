@@ -19,11 +19,11 @@ Therefore, every call option has a value of F and every put a value of S.
 Le't assume A=B=100. Let's also assume they follow a lognormal distribution: their value is:
 
 $$ 
-A = E(e^{\mathcal{N}(\mu_A, 5^2)}) 
+A = E(e^{\mathcal{N}(\mu_A, 0.05^2)}) 
 $$
 
 $$ 
-B = E(e^{\mathcal{N}(\mu_B, 25^2)})
+B = E(e^{\mathcal{N}(\mu_B, 0.25^2)})
 $$
 
 So we get that the mean of the exponent is:
